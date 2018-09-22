@@ -18,6 +18,12 @@ module.exports= {
           loader: 'babel-loader'
         }
       },
+      {
+        test: /\.(png|jp(e*)g|svg)$/, //javascript regex, webpack uses this to check for that file in the project and apply that particular loader fpr those files.
+        use: {
+          loader: 'file-loader'
+        }
+      },
     ]
   },
   plugins:[

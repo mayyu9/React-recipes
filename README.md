@@ -39,3 +39,21 @@ Setting up the Webpack:
 command to execute and check webpack:
 
     ./node_modules/.bin/webpack index.js -o bundle.js --mode="development"
+
+Setting up the webpack development server:
+
+  Webpack Dev server:
+  it is an express server, but has some additional functionality, that reads your webpack config file and keeps a fast-in-memory bundle that you can use for development purpose.
+  It will also watch for src files and recompiles it whenever the file changes.
+
+  install webpack-dev-server
+
+  to run the application using webpack-dev-server
+    ./node_modules/.bin/webpack-dev-server
+
+  this will start the application on localhost:8080
+
+  HTMLWebpackPlugin:
+    First it simplifies the creation of the HTML file to server your webpack bundles, and also this is very important, it injects a script tag into the target HTML.
+    This plugin will create a HTML file and insert a script tag for serving bundle file.
+     

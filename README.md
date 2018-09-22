@@ -56,4 +56,8 @@ Setting up the webpack development server:
   HTMLWebpackPlugin:
     First it simplifies the creation of the HTML file to server your webpack bundles, and also this is very important, it injects a script tag into the target HTML.
     This plugin will create a HTML file and insert a script tag for serving bundle file.
-     
+
+  Dotenv:
+  this library will read data from .env file.
+  we use this library to store some global data which can be used across the application.
+  we can store api endpoints this will help us to load different urls for production and development

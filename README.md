@@ -61,3 +61,9 @@ Setting up the webpack development server:
   this library will read data from .env file.
   we use this library to store some global data which can be used across the application.
   we can store api endpoints this will help us to load different urls for production and development
+
+  Babel-preset-stage-0:
+  this preset will help us in avoiding unwanted explicit binding for the fucntion.
+  in this project we have onRecipieClick function, this function is having definition in App.js but we have utilized it in RecipeList component.
+  so we have binded this function in both App.js and RecipeList.js. here we are creating two times binding.
+  To avoid this way of binding use stage-0 preset, install this preset and convert the onRecipeClick function as arrow function.

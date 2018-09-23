@@ -25,6 +25,22 @@ module.exports= {
           loader: 'file-loader'
         }
       },
+
+      {
+        test: /\.(css)$/, //javascript regex, webpack uses this to check for that file in the project and apply that particular loader fpr those files.
+        use: [
+          {
+            loader: 'style-loader'  //read css code and inject into head of html file. this loader will get applied from last to first(postcss---style loader)
+            //postcss will read the postcss config and output of that will be feed into css-loader and then the output of that will be deed into style-loader, so that style loader injects into html file.
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader'
+          }
+        ]
+      },
     ]
   },
   plugins:[

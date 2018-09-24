@@ -1,15 +1,26 @@
 import React from 'react';
+import classNames from 'classnames';
 
 const RecipeDetails = (props) =>{
   if(! props.currentRecipes){
     return (
-      <p style={props.style}>Please the recipe to check all other deatils.</p>
+      <p
+      className={ classNames('h3 p2 bg-white italic center', props.className)}
+        style={props.style}
+      >
+      Please the recipe to check all other deatils.
+      </p>
     )
   }
   return(
-    <div style={props.style}>
-      <h2>{props.currentRecipes.name}</h2>
-      <img alt={props.currentRecipes.name} src={props.currentRecipes.image} />
+    <div
+      className={classNames('p2 bg-white', props.className)}
+      style={props.style}
+    >
+      <h2 className="h2">
+        {props.currentRecipes.name}
+      </h2>
+      <img className="fit" alt={props.currentRecipes.name} src={props.currentRecipes.image} style={{maxWidth: '100%'}} />
       <div>
         <span>category: {props.currentRecipes.category} </span>
         <span> Calories: {props.currentRecipes.calories}</span>

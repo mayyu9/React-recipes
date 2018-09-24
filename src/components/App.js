@@ -61,12 +61,13 @@ class App extends React.Component {
     return(
     <div>
       <Header />
-      <main style={ {display: 'flex'} }>
+      <main className="px4 flex">
         <RecipeList
           onClick={this.onRecipeClick}
           recipes={recipes}
           style= { {flex: 3} }/>
         <RecipeDetails
+          className = "ml4"
           currentRecipes = { currentRecipes}
           style= { {flex: 5} }/>
       </main>

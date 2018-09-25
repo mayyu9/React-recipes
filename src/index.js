@@ -4,6 +4,6 @@ import App from './components/App';
 
 import './styles/index.css';
 
-const Mount_Element = document.getElementById('root');
+const mountElement = document.getElementById('root');
 
-ReactDom.render(<App />, Mount_Element);
+ReactDom.render(<App />, mountElement);

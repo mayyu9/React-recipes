@@ -6,7 +6,15 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --mode development --open --hot",
     "build": "./node_modules/.bin/webpack --mode development",
-    "lint": "./node_modules/.bin/eslint ./src"
+    "lint": "./node_modules/.bin/eslint ./src",
+    "precommit": "lint-staged",
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "prettier --write",
+      "git add"
+    ]
   },
   "author": "MS",
   "license": "ISC",

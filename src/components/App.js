@@ -28,7 +28,7 @@ class App extends React.Component {
   //
   // }
 
-  // converting the below function as arrow function, because to avoid explicit binding of the recipe objects on every click.
+  //converting the below function as arrow function, because to avoid explicit binding of the recipe objects on every click.
   // we need a stage zero preset for this.
   componentDidMount() {
     // fetching recipes data

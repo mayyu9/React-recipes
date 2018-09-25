@@ -74,3 +74,9 @@ Setting up the webpack development server:
 
   command to execute prettier:
     ./node_modules/.bin/prettier ./src/*.js --write
+
+  Husky:
+  this library will help us to acheive the precommit workflow. on every commit to git, it should execute linting and prettier, if any issues found then commit should fail.
+
+  lint-staged:
+  this library also helps in the precommit workflow but using this library we will recheck only the file which got modified and not the rest.

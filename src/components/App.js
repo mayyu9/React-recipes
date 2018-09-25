@@ -3,7 +3,6 @@ import Header from './Header';
 import RecipeList from './RecipeList';
 import RecipeDetails from './RecipeDetails';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -35,23 +34,23 @@ class App extends React.Component {
     // fetching recipes data
     fetch(`${API_URL}/v1/recipes`)
       .then(res => res.json())
-      .then((recipes) => {
+      .then(recipes => {
         this.setState({ recipes });
       });
   }
 
-  onRecipeClick = (id) => {
+  onRecipeClick = id => {
     // fetching paticular recipe data
     fetch(`${API_URL}/v1/recipes/${id}`)
       .then(res1 => res1.json())
-      .then((cRecipe) => {
-      // console.log('recipe:' +JSON.stringify(cRecipe));
+      .then(cRecipe => {
+        // console.log('recipe:' +JSON.stringify(cRecipe));
         this.setState({ currentRecipes: cRecipe });
       });
     // .catch(e => {
     //   console.log('error: '+JSON.stringify(e));
     // });
-  }
+  };
 
   render() {
     const { recipes, currentRecipes } = this.state;
@@ -74,6 +73,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 export default App;

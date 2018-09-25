@@ -49,7 +49,7 @@ Setting up the webpack development server:
   install webpack-dev-server
 
   to run the application using webpack-dev-server
-    ./node_modules/.bin/webpack-dev-server
+      ./node_modules/.bin/webpack-dev-server
 
   this will start the application on localhost:8080
 
@@ -67,3 +67,10 @@ Setting up the webpack development server:
   in this project we have onRecipieClick function, this function is having definition in App.js but we have utilized it in RecipeList component.
   so we have binded this function in both App.js and RecipeList.js. here we are creating two times binding.
   To avoid this way of binding use stage-0 preset, install this preset and convert the onRecipeClick function as arrow function.
+
+  Prettier:
+  this tool enforces the code to be in certain style. eslint will warn and throw errors if the code is not in the standard.
+  Prettier will take the whole code and pretify it.
+
+  command to execute prettier:
+    ./node_modules/.bin/prettier ./src/*.js --write

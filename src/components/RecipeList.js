@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const RecipeList = (props) => {
+const RecipeList = props => {
   return (
     <div style={props.style}>
       <h2 className="h2">Recipes</h2>
@@ -17,7 +17,6 @@ const RecipeList = (props) => {
             <span>{recipe.category}</span>
           </li>
         ))}
-
       </ul>
     </div>
   );

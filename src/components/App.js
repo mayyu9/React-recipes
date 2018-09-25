@@ -4,13 +4,13 @@ import RecipeList from './RecipeList';
 import RecipeDetails from './RecipeDetails';
 
 class App extends React.Component {
-          constructor(props) {
-            super(props);
-            this.state = {
-              recipes: [],
-              currentRecipes: undefined,
-            };
-            // this.onRecipeClick=this.onRecipeClick.bind(this);
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipes: [],
+      currentRecipes: undefined,
+    };
+    // this.onRecipeClick=this.onRecipeClick.bind(this);
   }
 
   // onRecipeClick (id){

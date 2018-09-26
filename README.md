@@ -98,4 +98,7 @@ Setting up the webpack development server:
     Redirects:
     it is pretty straight forward, its just a way of saying that when a user goes to particular user it should redirect to a new one.
     redirect component allows us to do it declarative way, it takes two parameters, one is FROM(where) property and another is TO(Target) property.
+
+    navLink:
+    this component helps us to create a navigation menu, it helps in creating clickable anchors which will redirect to some other pages.
     

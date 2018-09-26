@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import NotFound from './NotFound';

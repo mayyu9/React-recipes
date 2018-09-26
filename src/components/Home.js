@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import RecipeList from './RecipeList';
 import RecipeDetails from './RecipeDetails';
 
@@ -6,8 +7,6 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipes: [],
-      favorites: [],
       currentRecipes: undefined,
     };
     // this.toggleFavourite = this.toggleFavourite.bind(this);
@@ -28,17 +27,6 @@ class Home extends React.Component {
   //
   // }
 
-  // converting the below function as arrow function, because to avoid explicit binding of the recipe objects on every click.
-  // we need a stage zero preset for this.
-  componentDidMount() {
-    // fetching recipes data
-    fetch(`${API_URL}/v1/recipes`)
-      .then(res => res.json())
-      .then(recipes => {
-        this.setState({ recipes });
-      });
-  }
-
   onRecipeClick = id => {
     // fetching paticular recipe data
     fetch(`${API_URL}/v1/recipes/${id}`)
@@ -52,24 +40,15 @@ class Home extends React.Component {
     // });
   };
 
-  toggleFavourite = id => {
-    this.setState(({ favorites, ...state }) => {
-      const idx = favorites.indexOf(id);
-      if (idx !== -1) {
-        return { ...state, favorites: favorites.filter(f => f.id !== id) };
-      }
-      return { ...state, favorites: [...favorites, id] };
-    });
-  };
-
   render() {
-    const { recipes, favorites, currentRecipes } = this.state;
+    const { recipes, favorites } = this.props.state;
+    const { currentRecipes } = this.state;
     return (
       <div>
         <main className="px4 flex">
           <RecipeList
             onClick={this.onRecipeClick}
-            onFavourited={this.toggleFavourite}
+            onFavourited={this.props.toggleFavourite}
             favorites={favorites}
             recipes={recipes}
             style={{ flex: 3 }}
@@ -84,5 +63,10 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  state: PropTypes.object,
+  toggleFavourite: PropTypes.func,
+};
 
 export default Home;

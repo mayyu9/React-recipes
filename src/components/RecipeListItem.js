@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const RecipeListItem = ({ recipe, onFavourited, onClick }) => (
   <li
@@ -24,9 +24,9 @@ const RecipeListItem = ({ recipe, onFavourited, onClick }) => (
 );
 
 RecipeListItem.propTypes = {
-  recipe: propTypes.array,
-  onClick: propTypes.func,
-  onFavourited: propTypes.func,
+  recipe: PropTypes.array,
+  onClick: PropTypes.func,
+  onFavourited: PropTypes.func,
 };
 
 export default RecipeListItem;

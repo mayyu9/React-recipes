@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
+import NotFound from './NotFound';
 import Favourites from './Favourites';
 
 // BrowserRoute renders only one child so wrap the route with parent
@@ -9,9 +10,13 @@ import Favourites from './Favourites';
 const App = () => (
   <BrowserRouter>
     <main>
-    <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/favourites" component={Favourites} />
+      <Header />
+      <Switch>
+        <Redirect from="/home" to="/" />
+        <Route exact path="/" component={Home} />
+        <Route path="/favourites" component={Favourites} />
+        <Route component={NotFound} />
+      </Switch>
     </main>
   </BrowserRouter>
 );

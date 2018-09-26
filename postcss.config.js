@@ -6,5 +6,5 @@ module.exports = {
     postcssImport,
     postcssCssNext
 
-  ]
+  ],
 };

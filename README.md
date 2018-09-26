@@ -80,3 +80,13 @@ Setting up the webpack development server:
 
   lint-staged:
   this library also helps in the precommit workflow but using this library we will recheck only the file which got modified and not the rest.
+
+  React-Router V4:
+
+    BrowserRouter:  this component use html5 history API, to keep UI in sync with a URL.
+    that means when URL's changes, react notice it and re-renders his content and also enables us to change the URL from inside the react code.
+    Inside the BrowserRoute, we create routes. the route renders some UI if path matches.
+
+  Devserver configuration is usefull when we have route which webpack tries to resolve by using the express server and get 404 response.
+    historyApiFallback: true, webpack does is, whenever it encounters 404, then it re-routes it the request to index.html which will allow react to make the routing.
+    example is routing to favourites.

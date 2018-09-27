@@ -101,4 +101,9 @@ Setting up the webpack development server:
 
     navLink:
     this component helps us to create a navigation menu, it helps in creating clickable anchors which will redirect to some other pages.
-    
+
+  Jest:
+    for Snapshot based testing.
+    we need to have eslint-plugin-jest and update the eslintrc file for jest (add jest plugin and env for jest)
+    package.json for executing jest.
+    jest.config file, which will be read by jest while executing the test cases.

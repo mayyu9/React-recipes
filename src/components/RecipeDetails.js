@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const RecipeDetails = props => {
   if (!props.currentRecipes) {
@@ -47,7 +47,7 @@ const RecipeDetails = props => {
 
 /* eslint react/prop-types: 0 */
 RecipeDetails.propTypes = {
-  currentRecipes: propTypes.object,
-  style: propTypes.object,
+  currentRecipes: PropTypes.object,
+  style: PropTypes.object,
 };
 export default RecipeDetails;

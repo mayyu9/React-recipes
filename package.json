@@ -6,6 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --mode development --open --hot",
     "build": "./node_modules/.bin/webpack --mode development",
+    "test" : "./node_modules/.bin/jest",
     "lint": "./node_modules/.bin/eslint ./src",
     "precommit": "lint-staged"
   },
@@ -34,10 +35,12 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
     "postcss": "^7.0.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",

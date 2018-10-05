@@ -5,7 +5,6 @@ const RecipeListItem = ({ recipe, onFavourited, onClick }) => (
   <li
     className="py2 border-bottom border-bottom-dashed pointer"
     key={recipe.id}
-    // onClick={ props.onClick(recipe.id)}
     onClick={() => onClick(recipe.id)}
   >
     <span className="mr1">

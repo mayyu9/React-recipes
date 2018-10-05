@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Logo from '../static/images/Logo.jpg';
 
 const HeaderLink = ({ children, ...props }) => (
   <NavLink
@@ -16,7 +17,11 @@ const HeaderLink = ({ children, ...props }) => (
 
 const Header = () => (
   <header className="flex align-center justify-between px4">
-    <h1 className="h1">My Recipes App </h1>
+    <div>
+      <h1 className="h1 inline-block mr2">My Recipes App </h1>
+      <span className="mr1">by</span>
+      <img src={Logo} alt="logo" style={{ width: 30 }} />
+    </div>
     <nav>
       <HeaderLink to="/">Home</HeaderLink>
       <HeaderLink to="/favourites">Favourites</HeaderLink>

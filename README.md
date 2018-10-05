@@ -107,3 +107,9 @@ Setting up the webpack development server:
     we need to have eslint-plugin-jest and update the eslintrc file for jest (add jest plugin and env for jest)
     package.json for executing jest.
     jest.config file, which will be read by jest while executing the test cases.
+
+moduleNameMapper:
+    this plugin we add it as part of jest configuration.
+    this plugin is responsible for mocking the required assests, in testing. specially images.
+    this plugin take a regex expression to resolve the mock files, then while testing it mocks the assets file.
+    

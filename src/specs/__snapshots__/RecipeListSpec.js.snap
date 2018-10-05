@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeList /> should not break if no recipe passed to RecipeList component 1`] = `
+<div>
+  <h2
+    className="h2"
+  >
+    Recipes
+  </h2>
+  <ul
+    className="list-reset"
+  />
+</div>
+`;
+
+exports[`<RecipeList /> should render when recipe passed to RecipeListItem component 1`] = `
+<div>
+  <h2
+    className="h2"
+  >
+    Recipes
+  </h2>
+  <ul
+    className="list-reset"
+  >
+    <li
+      className="py2 border-bottom border-bottom-dashed pointer"
+      onClick={[Function]}
+    >
+      <span
+        className="mr1"
+      >
+        <input
+          onClick={[Function]}
+          type="checkbox"
+        />
+      </span>
+      <span>
+        test Recipe
+      </span>
+      <span>
+        test category
+      </span>
+    </li>
+  </ul>
+</div>
+`;

@@ -30,17 +30,21 @@ const RecipeDetails = props => {
         <span> Calories: {props.currentRecipes.calories}</span>
       </div>
       <h3>Ingredients</h3>
+      {props.currentRecipes.ingredients &&
       <ul>
         {props.currentRecipes.ingredients.map(ingredient => {
           return <li key={ingredient}>{ingredient}</li>;
         })}
       </ul>
+    }
       <h3>steps</h3>
+      {props.currentRecipes.steps &&
       <ul>
         {props.currentRecipes.steps.map((step, index) => {
           return <li key={index + 1}>{step}</li>;
         })}
       </ul>
+    }
     </div>
   );
 };
@@ -48,6 +52,11 @@ const RecipeDetails = props => {
 /* eslint react/prop-types: 0 */
 RecipeDetails.propTypes = {
   currentRecipes: PropTypes.object,
+  className: PropTypes.string,
   style: PropTypes.object,
+};
+
+RecipeDetails.defaultProps= {
+
 };
 export default RecipeDetails;

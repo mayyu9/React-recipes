@@ -24,9 +24,13 @@ const RecipeListItem = ({ recipe, onFavourited, onClick }) => (
 );
 
 RecipeListItem.propTypes = {
-  recipe: PropTypes.array,
+  recipe: PropTypes.object,
   onClick: PropTypes.func,
   onFavourited: PropTypes.func,
+};
+
+RecipeListItem.defaultProps = {
+  recipe: {},
 };
 
 export default RecipeListItem;

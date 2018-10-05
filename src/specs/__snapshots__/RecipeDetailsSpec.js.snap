@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeDetails /> should render RecipeDetails component, recipe without ingredients 1`] = `
+<div
+  className="p2 bg-white test-intg"
+>
+  <h2
+    className="h2"
+  >
+    test Recipe
+  </h2>
+  <img
+    alt="test Recipe"
+    className="fit"
+    style={
+      Object {
+        "maxWidth": "100% ",
+      }
+    }
+  />
+  <div>
+    <span>
+      category: 
+      test category
+       
+    </span>
+    <span>
+       Calories: 
+    </span>
+  </div>
+  <h3>
+    Ingredients
+  </h3>
+  <h3>
+    steps
+  </h3>
+  <ul>
+    <li>
+      step 1
+    </li>
+    <li>
+      step 2
+    </li>
+    <li>
+      step 3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<RecipeDetails /> should render RecipeDetails component, recipe without steps 1`] = `
+<div
+  className="p2 bg-white test-step"
+>
+  <h2
+    className="h2"
+  >
+    test Recipe
+  </h2>
+  <img
+    alt="test Recipe"
+    className="fit"
+    style={
+      Object {
+        "maxWidth": "100% ",
+      }
+    }
+  />
+  <div>
+    <span>
+      category: 
+      test category
+       
+    </span>
+    <span>
+       Calories: 
+    </span>
+  </div>
+  <h3>
+    Ingredients
+  </h3>
+  <h3>
+    steps
+  </h3>
+</div>
+`;
+
+exports[`<RecipeDetails /> should render RecipeDetails component, with recipe className 1`] = `
+<div
+  className="p2 bg-white test-className"
+>
+  <h2
+    className="h2"
+  >
+    test Recipe
+  </h2>
+  <img
+    alt="test Recipe"
+    className="fit"
+    style={
+      Object {
+        "maxWidth": "100% ",
+      }
+    }
+  />
+  <div>
+    <span>
+      category: 
+      test category
+       
+    </span>
+    <span>
+       Calories: 
+    </span>
+  </div>
+  <h3>
+    Ingredients
+  </h3>
+  <h3>
+    steps
+  </h3>
+  <ul>
+    <li>
+      step 1
+    </li>
+    <li>
+      step 2
+    </li>
+    <li>
+      step 3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<RecipeDetails /> should render RecipeDetails component, with recipe details 1`] = `
+<div
+  className="p2 bg-white"
+>
+  <h2
+    className="h2"
+  >
+    test Recipe
+  </h2>
+  <img
+    alt="test Recipe"
+    className="fit"
+    style={
+      Object {
+        "maxWidth": "100% ",
+      }
+    }
+  />
+  <div>
+    <span>
+      category: 
+      test category
+       
+    </span>
+    <span>
+       Calories: 
+    </span>
+  </div>
+  <h3>
+    Ingredients
+  </h3>
+  <h3>
+    steps
+  </h3>
+  <ul>
+    <li>
+      step 1
+    </li>
+    <li>
+      step 2
+    </li>
+    <li>
+      step 3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<RecipeDetails /> should render RecipeDetails component, with zero state 1`] = `
+<p
+  className="h3 p2 bg-white italic center"
+>
+  Please the recipe to check all other deatils.
+</p>
+`;
